@@ -1,0 +1,23 @@
+li{
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
+  padding-right: 5vmin;
+  padding-left: 5vmin;
+  /*width:50vw;*/
+}
+
+h3{
+  font-size: 3.5vmin;
+  font-weight: bold;
+}
+
+p{
+  font-size: 2vmin;
+}
+
+.lorem{
+  text-align: justify;
+  width: 50vw;
+  margin: 3vmin;
+
+}

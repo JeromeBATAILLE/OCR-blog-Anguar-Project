@@ -1,0 +1,20 @@
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success': postLoveIts > 0, 'list-group-item-danger': postLoveIts < 0}">
+  <div class="row d-flex justify-content-between align-items-center">
+    <h3 class="col-sm-4">{{ postTitle }}</h3>
+    <p class="col-sm-3">{{ postDate | date: 'short' }}</p>
+  </div>
+  <p class="lorem">{{ postContent }}</p>
+  <div class="row">
+    <button class="btn btn-success offset-1 col-sm-2" (click)="loveIt()" type="button" name="button"> Love It </button>
+    <button class="btn btn-danger offset-1 col-sm-2" (click)="dontLoveIt()" type="button" name="button"> Don't Love It </button>
+  </div>
+</li>
+<!--
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success': appareilStatus === 'On', 'list-group-item-danger': appareilStatus === 'Off'}">
+  <div style="width:20px;height:20px;background-color:orange;" *ngIf="appareilStatus === 'Off'">
+
+  </div>
+  <h4 [ngStyle]="{color: getColor()}"> Appareil : {{ appareilName }} est {{ getStatus() }} !</h4>
+  <input type="text" class="form-control" [(ngModel)]="appareilName" name="" value="">
+</li>
+-->
