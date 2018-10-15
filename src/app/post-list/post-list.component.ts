@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostListComponent implements OnInit {
 
-  //@Input() posts[] : array;
-
+  @Input() mesPosts : any[];
+/*
   posts = [
     {
       title: "Mon premier post",
